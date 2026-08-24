@@ -34,7 +34,7 @@ namespace MauiAppMinhasCompras.Helpers
 
         public Task<List<Produto>> GetAll() 
         {
-            _conn.Table<Produto>().ToListAsync();
+            return _conn.Table<Produto>().ToListAsync();
         }
 
         public Task<List<Produto>> Search(string q) 
